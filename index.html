@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 2rem;
+      }
+      .plan {
+        flex: 1;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: lightgray;
+      }
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .price {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .features {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+      }
+      .features li {
+        margin-bottom: 10px;
+      }
+      @media (max-width: 800px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="plan">
+        <div class="title">Basic</div>
+        <div class="price">9.99/mo</div>
+        <ul class="features">
+          <li>- 10gb</li>
+          <li>- 1 user</li>
+          <li>- support</li>
+        </ul>
+        <button>signup</button>
+      </div>
+      <div class="plan">
+        <div class="title">standard</div>
+        <div class="price">19.99/mo</div>
+        <ul class="features">
+          <li>- 50gb</li>
+          <li>- 5 user</li>
+          <li>- phone and email support</li>
+        </ul>
+        <button>signup</button>
+      </div>
+      <div class="plan">
+        <div class="title">premium</div>
+        <div class="price">49.99/mo</div>
+        <ul class="features">
+          <li>- 100gb</li>
+          <li>- 10 user</li>
+          <li>- 24/7 support</li>
+        </ul>
+        <button>signup</button>
+      </div>
+    </div>
+  </body>
+</html>
